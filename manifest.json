@@ -1,0 +1,11 @@
+{
+    "display_name": "my-favorites-plugin",
+    "loading_order": 10,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "Generated AI",
+    "version": "2.0.0",
+    "homePage": ""
+}
