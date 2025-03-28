@@ -1,0 +1,156 @@
+/* public/extensions/third-party/my-favorites-plugin/style.css */
+
+/* Favorite icon styling */
+.favorite-toggle-icon {
+    cursor: pointer;
+    transition: color 0.2s ease-in-out, transform 0.1s ease-in-out;
+    color: var(--text_color); /* Default color from ST theme */
+}
+
+.favorite-toggle-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Specific styling for the favorited state (using solid star) */
+.favorite-toggle-icon i.fa-solid.fa-star {
+    color: gold;
+    font-weight: 900; /* Ensure it's visibly solid */
+}
+
+/* Sidebar button */
+#my_favorites_sidebar_button {
+    cursor: pointer;
+}
+#my_favorites_sidebar_button:hover {
+    background-color: var(--secondary_color); /* Theme hover color */
+}
+
+/* Favorites Popup styling */
+.favorites-popup-content .fav-list-container {
+    max-height: 400px; /* Or adjust as needed */
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid var(--border_color);
+    padding: 5px;
+}
+
+.favorites-popup-content .favorite-item {
+    border-bottom: 1px dashed var(--border_color);
+    padding: 8px 5px;
+    margin-bottom: 5px;
+}
+.favorites-popup-content .favorite-item:last-child {
+    border-bottom: none;
+}
+
+.favorites-popup-content .fav-meta {
+    font-size: 0.8em;
+    color: var(--text_secondary_color);
+    margin-bottom: 3px;
+}
+
+.favorites-popup-content .fav-note {
+    font-size: 0.9em;
+    font-style: italic;
+    color: var(--text_color);
+    background-color: var(--background_secondary_color);
+    padding: 2px 4px;
+    border-radius: 3px;
+    margin: 3px 0;
+    display: inline-block; /* Make it wrap nicely */
+}
+
+.favorites-popup-content .fav-preview {
+    font-size: 0.95em;
+    margin-bottom: 5px;
+    word-break: break-word;
+}
+
+.favorites-popup-content .fav-preview.deleted,
+.favorites-popup-content .fav-preview.requires-switch {
+    color: var(--warning_color);
+    font-style: italic;
+}
+
+.favorites-popup-content .fav-actions i {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 0.9em;
+    color: var(--text_secondary_color);
+    transition: color 0.2s ease;
+}
+.favorites-popup-content .fav-actions i:hover {
+    color: var(--primary_color);
+}
+
+.favorites-popup-content .pagination-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+.favorites-popup-content .pagination-controls button {
+    margin: 0 5px;
+}
+.favorites-popup-content .pagination-controls span {
+    margin: 0 10px;
+}
+
+.favorites-popup-content .empty-state {
+    text-align: center;
+    padding: 20px;
+    color: var(--text_secondary_color);
+}
+
+/* Plugin Page (Settings) styling */
+#favorites-plugin-settings-area .chat-list-container {
+    max-height: 500px; /* Adjust as needed */
+    overflow-y: auto;
+    border: 1px solid var(--border_color);
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#favorites-plugin-settings-area .chat-group-title {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid var(--primary_color);
+    padding-bottom: 3px;
+}
+#favorites-plugin-settings-area .chat-group-title:first-child {
+    margin-top: 0;
+}
+
+#favorites-plugin-settings-area .chat-entry-item {
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
+    margin-bottom: 3px;
+}
+#favorites-plugin-settings-area .chat-entry-item:hover {
+    background-color: var(--background_secondary_color);
+}
+#favorites-plugin-settings-area .chat-entry-item span {
+    font-size: 0.9em;
+}
+#favorites-plugin-settings-area .chat-entry-item .count {
+    float: right;
+    color: var(--text_secondary_color);
+}
+
+#favorites-plugin-settings-area .pagination-controls {
+     text-align: center;
+     margin-top: 10px;
+}
+#favorites-plugin-settings-area .pagination-controls button {
+    margin: 0 5px;
+}
+#favorites-plugin-settings-area .pagination-controls span {
+    margin: 0 10px;
+}
+
+#favorites-plugin-settings-area .empty-state {
+    text-align: center;
+    padding: 20px;
+    color: var(--text_secondary_color);
+}
